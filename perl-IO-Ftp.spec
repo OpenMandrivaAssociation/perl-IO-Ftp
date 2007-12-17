@@ -8,7 +8,6 @@ Group:		Development/Perl
 Summary:	Wrapper for Net::FTP
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/IO/%{realname}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel perl-URI
 
 BuildArch:	noarch
