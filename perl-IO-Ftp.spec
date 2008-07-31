@@ -2,7 +2,7 @@
 
 Name:		perl-%{realname}
 Version:	0.05
-Release:	%mkrel 4
+Release:	%mkrel 6
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Wrapper for Net::FTP
