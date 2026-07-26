@@ -1,15 +1,13 @@
 %define upstream_name	 IO-Ftp
-%define upstream_version 0.06
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.06
+Release:	2
 
 Summary:	Wrapper for Net::FTP
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/IO-Ftp
-Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIKEB/IO-Ftp-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MI/MIKEB/IO-Ftp-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ IO::Ftp is a wrapper for Net::FTP to simplify its use when
 using its stor and retr methods.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,9 +44,7 @@ make test
 
 * Wed Aug 05 2009 Jérôme Quelin <jquelin@mandriva.org> 0.50.0-1mdv2011.0
 + Revision: 410065
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.05-6mdv2009.0
+- rebuild using %0.06 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.05-6mdv2009.0
 + Revision: 257312
 - rebuild
 
